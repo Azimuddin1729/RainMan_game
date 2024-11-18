@@ -37,11 +37,13 @@ private:
     QList<Raindrop*> raindrops;
     QTimer *spawnTimer;
     QTimer *gameTimer;
-    QLabel *scoreLabel; // To display the score
-    int score; // Variable to track the score
-
+    QLabel *liveLabel; // To display the score
+    int live; // Variable to track the score
+    int score;
+    QLabel * scoreLabel;
     void endGame();
-    void updateScore(int points); // Method to update the score
+    void updateLive(int points); // Method to update the score
+    void updateScore(int points);
 };
 
 #endif // MAINWINDOW_H

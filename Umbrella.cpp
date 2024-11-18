@@ -19,7 +19,7 @@ void Umbrella::moveLeft(int distance) {
 
 void Umbrella::moveRight(int distance, int screenWidth) {
     // Check if moving right will keep the umbrella within the right boundary (screenWidth - umbrella width)
-    if (location_right_now + distance + width <= screenWidth) {
+    if (location_right_now + distance + width <= screenWidth-40) {
         setPos(x() + distance, y());
         location_right_now += distance;
     }
